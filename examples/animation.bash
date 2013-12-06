@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. $(dirname $0)/../vars/ansi.bash
+. $(dirname $(readlink -f ${BASH_SOURCE}))/../vars/ansi-vars.bash
 
 animate(){
    echo -e "$ANSI_GREEN$1$ANSI_RESET"
