@@ -3,11 +3,11 @@
 . $(dirname $(readlink -f ${BASH_SOURCE}))/../vars/ansi-vars.bash
 
 function confirm(){
-   echo -e "$GREEN$1$RESET"
+   echo -e "$ANSI_GREEN$1$ANSI_RESET"
 }
 function warn(){
-   echo -e "$RED$1!$RESET"
+   echo -e "$ANSI_RED$1!$ANSI_RESET"
 }
 function title(){
-   echo -e "\n$GREEN_SPACER\n$1\n$GREEN_SPACER\n"
+   echo -e "$GREEN_SPACER\n$1\n$GREEN_SPACER\n"
 }
