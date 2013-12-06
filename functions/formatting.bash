@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. $(dirname $(readlink -f ${BASH_SOURCE}))/../vars/ansi-vars.bash
+. $(dirname $(readlink -f ${BASH_SOURCE}))/../vars/formatting-vars.bash
 
 function confirm(){
    echo -e "$GREEN$1$RESET"
