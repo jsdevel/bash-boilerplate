@@ -8,3 +8,6 @@ function promptYepNope(){
    esac
 }
 
+function waitForEnter(){
+   read -p "Press [ENTER] to proceed..." asdf
+}
